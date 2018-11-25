@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.haryono.workout.UI.Menu">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/menu3"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="45dp"
+        android:id="@+id/llInstruction">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/instruction"
+            android:background="@drawable/rectangle_left_primary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingRight="30dp"
+            android:text="Instruction"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rectangle_right_primary"
+            android:textSize="18sp"
+            android:id="@+id/tvInstruction" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="45dp"
+        android:id="@+id/llExercises">
+        
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/exercises3"
+            android:background="@drawable/rectangle_left_primary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingRight="30dp"
+            android:text="Exercises"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rectangle_right_primary"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:id="@+id/tvExercises" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="45dp"
+        android:id="@+id/llHelp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/help"
+            android:background="@drawable/rectangle_left_primary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingRight="30dp"
+            android:text="Help"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rectangle_right_primary"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:id="@+id/tvHelp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="45dp"
+        android:id="@+id/llAbout">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/about"
+            android:background="@drawable/rectangle_left_primary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingRight="30dp"
+            android:text="About"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rectangle_right_primary"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:id="@+id/tvAbout" />
+
+    </LinearLayout>
+    
+</LinearLayout>

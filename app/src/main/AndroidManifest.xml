@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.haryono.workout">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UI.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.Menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".UI.Workout.ListWorkout"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UI.Menu"/>
+        <activity android:name=".UI.Workout.Workout"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UI.Workout.ListWorkout"/>
+        <activity android:name=".UI.Exercises.ListExercises"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UI.Menu"/>
+        <activity android:name=".UI.Exercises.Exercises"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UI.Exercises.ListExercises"/>
+        <activity android:name=".UI.Exercises.StartExercises"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UI.Exercises.Exercises"/>
+        <activity android:name=".UI.Help"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UI.Menu"/>
+        <activity android:name=".UI.About"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UI.Menu"/>
+    </application>
+
+</manifest>

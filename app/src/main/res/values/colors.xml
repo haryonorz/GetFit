@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSplash">#7bccc7</color>
+
+    <color name="notifBar">#bcc1c7</color>
+    <color name="theme">#60bfd3</color>
+    <color name="themeDark">#56b3c6</color>
+    <color name="background">#efefef</color>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GetFit</string>
+
+    <string name="workout_technique">- Keep elbows in\n
+        - Scapula protracted\n
+        - Till pelves backward
+    </string>
+    <string name="workout_description">
+        Mulailah pada posisi push-up biasa tetapi dengan tangan anda terbuka lebih lebar dari bahu anda.\n
+        Kemudian dorong tubuh anda ke atas dan ke bawah. Ingatlah untuk menjaga tubuh anda dalam keadaan lurus.</string>
+
+    <string name="exercises_description">
+        Mulailah pada posisi push-up biasa tetapi dengan tangan anda terbuka lebih lebar dari bahu anda.\n
+        Kemudian dorong tubuh anda ke atas dan ke bawah. Ingatlah untuk menjaga tubuh anda dalam keadaan lurus.</string>
+    <string name="exercises_duration">Durasi \t\t\t\t\t:</string>
+    <string name="exercises_frequention">Frekuensi \t\t\t:</string>
+    <string name="exercises_technique">Tehnik \t\t\t\t\t:</string>
+
+    <string name="about_description">\tGetFit adalah aplikasi yang akan membantu anda dalam melakukan gerakan 7-Minutes Workout. Anda akan
+     mendapatkan pelatihan yang telah disarankan dan diberikan timer untuk mempermudah latihan. Anda juga dapat melihat gerakan workout melalui animasi bergerak atau video
+     dan disetiap gerakan diberikan penjelasan, sehingga anda  dapat berolahraga dengan baik dan benar.</string>
+
+
+    <string name="format_time">15"</string>
+    <string name="dev"><i><u>Developer</u></i></string>
+
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.haryono.workout.UI.Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/exercises2"
+                android:scaleType="centerCrop"
+                android:id="@+id/ivExercises" />
+
+            <com.example.haryono.workout.Font.CustomTextView2
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="12dp"
+                android:text="7-Minutes Workout"
+                android:textSize="8sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:textDirection="ltr"
+                android:background="@drawable/rounded_shape_text"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat"
+                android:id="@+id/ctMetode" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.example.haryono.workout.Font.CustomTextView2
+                    android:layout_width="130dp"
+                    android:layout_height="25dp"
+                    android:text="Description"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:paddingLeft="18dp"
+                    android:textDirection="ltr"
+                    android:background="@drawable/rounded_shape_text"
+                    android:textAlignment="textStart"
+                    tools:ignore="RtlCompat" />
+
+                <com.example.haryono.workout.Font.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/exercises_description"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/ctDescription" />
+
+                <com.example.haryono.workout.Font.CustomTextView2
+                    android:layout_width="120dp"
+                    android:layout_height="25dp"
+                    android:text="Exsercises"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:paddingLeft="18dp"
+                    android:textDirection="ltr"
+                    android:background="@drawable/rounded_shape_text"
+                    android:textAlignment="textStart"
+                    tools:ignore="RtlCompat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp">
+                    <com.example.haryono.workout.Font.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/exercises_duration"
+                        android:textColor="@android:color/black"/>
+
+                    <com.example.haryono.workout.Font.CustomTextView
+                        android:id="@+id/ctDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:text="7 Menit"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.example.haryono.workout.Font.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="@string/exercises_frequention"
+                        android:textColor="@android:color/black"/>
+
+                    <com.example.haryono.workout.Font.CustomTextView
+                        android:id="@+id/ctFrequention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:text="2 - 3 Set per Hari"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+
+                <com.example.haryono.workout.Font.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/exercises_technique"
+                    android:textColor="@android:color/black"/>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/exercisesWorkoutList"> </ListView>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="START"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/theme"
+                    android:id="@+id/btnStart" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
